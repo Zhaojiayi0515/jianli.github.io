@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  .navbar {
+  background-color: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  z-index: 1000;
+}
+.sidebar img {
+    width: 100px; 
+    height: auto;
+    border-radius: 50%; 
+    margin: 10px;
+    display: block;
+  }
+
+body {
+  margin-right: 10%; 
+  margin-left: 10%; 
+  margin-top: 10%; 
+  padding-top: 30px;
+  display: flex;
+}
+    .navbar a {
+      float: left;
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* 鼠标悬停时改变链接颜色 */
+    .navbar a:hover {
+      color: black;
+    }
+
+
+    .sidebar {
+      position: fixed;
+      top:10%;
+      left:10%;
+      width: calc(30% - 40px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: calc(100% - 40px);
+      padding: 20px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+
+    .content {
+      margin-left: calc(30% + 20px);
+      width: calc(70% - 40px); 
+      padding: 20px;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+
+
+    .name {
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .school {
+      font-style: italic;
+      margin-bottom: 5px;
+      line-height: 3.6; 
+    }
+
+    .contact {
+      font-size: 14px;
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="#Page">HomePage</a>
+    <a href="#Education">Education</a>
+    <a href="#Publications">Publications</a>
+    <a href="#Certificate">Certificate</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Experience">Experience</a>
+    <a href="#Activity">Extracurricular Activity</a>
+    <a href="#Copyrights">Copyrights</a>
+    <a href="#Honors">Honors and Awards</a>
+  </div>
+  <div class="sidebar">
+    <img src="lkc.jpg" alt="Profile Image">
+    <div class="name">KeChen Li</div>
+    <div  class="school">
+      🌁Address: No.29, Yudao Street, Qinhuai District, Nanjing, Jiangsu Province
+      <br/>📞Phone: +86 18106289189
+      <br/>📍Nantong, Jiangsu, China
+    </div>
+  </div>
+  <div class="content" id="Page">
+    <h1 id="Education">🎓Education</h1>
+    <ul>
+        <li>
+            <b>University of Galway, Ireland</b>
+            <br/><i>09/2025 - 07/2026</i><br/>
+            Computer Science and Technology
+            Core Modules: Data Analytics Programming,Networks and Network Science,Data Visualization,Data Analytics Case Studies
+        </li>
+        <li>
+            <b>Nanjing Agricultural University</b>
+            <br/><i>07/2022-08/2026(expected)</i><br/>
+            Bachelor’s Degree in Business Administration (Part-Time)
+            Core Modules: Modern Project Management,Data Modelling and Decision Making,Financial Management,Enterprise Business Strategy,Financial Theory and Practise</li>
+        </li>
+        <li>
+            <b>Nanjing University of Aeronautics and Astronautics</b>
+            <br/><i>09/2023-07/2025</i><br/>
+            Higher Education for Academic Qualification in Software Engineering (Full-Time)
+        </li>
+        <li>
+            <b>Nanjing University of Aeronautics and Astronautics</b>
+            <br/><i>10/2019- 12/2024 (expected)</i><br/>
+            Computer Science and Technology
+            Core Modules: Advanced Mathematics,Discrete Mathematics,C++ Programming,Computer Networks,Computer System Architecture,Data Structures,Software Engineering,Operating Systems
+        </li>
+        <li>
+            <b>Nantong Normal College</b>
+            <br/><i>09/2018-07/2023</i><br/>
+            Higher Education Diploma in Computer Application Technology
+            Core Modules: Java Programming,C Programming,Dynamic Web Design,Database Application Development
+        </li>
+    </ul>
+
+    <h1 id="Publications">⭐Publications</h1>
+    <ul>
+        <li>Zou, J., Li, K. (2023). “Research on the Digitised Marketing and Operational Models in the Automotive Industry.” Shanghai Business. ISSN1007-2845.</li>
+        <li>Li, K. et al.(2023). “Deciphering Modern Customer Loyalty: A Machine Learning Approach.” The 2023 3rd International Conference on Internet of Things and Machine Learning. SPIE – The International Society for Optical Engineering. ISSN0277 - 786X. EI Compendex, SCOPUS. Doi：10.1117/12.3016467.</li>
+    </ul>
+    
+    <h1 id="Certificate">📚Certificate</h1>
+      <ul>
+          <li><i>02/2023</i>&ensp;Senior-Certified Data Analyst (China Financial Analysis Association)</li>
+          <li><i>11/2022</i>&ensp;Intermediate-Software Designer (Ministry of Human Resources and Social Security)</li>
+          <li><i>12/2022</i>&ensp;Industrial Internet Platform Development Engineer Intermediate (Talent Exchange Center of the Ministry of Industry and Information Technology)</li>
+          <li><i>03/2019</i>&ensp;National Computer Rank Examination Level 1 (Office)</li>
+          <li><i>03/2023</i>&ensp;National Computer Rank Examination Level 2 (C Language)</li>
+      </ul>
+
+      <h1 id="Projects">🌎Projects</h1>
+      <ul>
+          <li>
+              <b>“Research on the Factors Influencing User Experience of Beijing Mobile Based on XGBoost.”</b>
+              <br/>This study focuses on investigating the factors that influence user experience for Beijing Mobile users. By using Pearson correlation coefficient analysis, the study examines various factors that impact user satisfaction and ratings, providing a basis for decision-making. Additionally, an XGBoost prediction model is developed based on the relevant influencing factors to predict customer ratings.
+              <br/>Keywords: Influential Factors; Pearson Correlation Coefficient; Satisfaction Prediction; Machine Learning; XGBoost.
+              <br/>Achievement: National First Prize, Undergraduate Category, 2022 the 3rd MathorCup Big Data Competition.
+          </li>
+          <li>
+              <b>“Predictive and Operational Research on Sales Revenue in the Pharmaceutical E-commerce Sector based on Multiple Linear Regression.”</b>
+              <br/>This study focuses on improving the operation of pharmaceutical e-commerce platforms. By utilizing data mining techniques, the sales performance of drugs under various conditions and the key factors influencing the total sales amount are analyzed. A multiple linear regression model is established to predict the future three-month sales total of vitamin drugs on T-mall.
+              <br/>Keywords: E-commerce; Sales Revenue; Forecasting Model; Multiple Linear Regression.
+              <br/>Achievement: National First Prize, 2022 National College Student Data Analysis Competition.
+          </li>
+          <li>
+              <b>“Small-Batch Material Production Scheduling based on Time Series Forecasting and Inventory Management.”</b>
+              <br/>This study focuses on materials production planning for an electronics manufacturing company in China. The research first identifies six key materials, classifying them into ABC categories based on demand and cumulative sales. An ARIMA model is used for weekly predictions, with satisfactory results, although some errors are noted. The study then improves the prediction accuracy using a BP neural network. A production plan is calculated for one selected material for weeks 101 to 110, achieving a service level of 99.28%. The study then addresses the balance between inventory level and service level considering price fluctuations, using an ABC inventory management system. Finally, a generalized production planning method is established through training models, which can sacrifice service level to some extent to reduce inventory cost when necessary.
+              <br/>Keywords: Autoregressive Integrated Moving Average Model (AIRMA); BP Neural Network; Inventory Management; Demand Forecasting; Production Scheduling.
+              <br/>Achievement: Jiangsu Regional Second Prize, 2022 National Undergraduate Mathematical Contest in Modeling.
+          </li>
+      </ul>
+      <h1 id="Experience">📌 Professional Experience</h1>
+      <ul>
+          <li>
+              <b>Jiangsu Lincheng Technology Co., Ltd. (Member of Nantong Software Industry Association)</b>
+              <br/><i>10/2021–present</i>
+              <br/><i>Legal representative, CEO</i>
+              <br/>
+                • Led the team in independent development of multiple products, responsible for project portfolio management, software architecture design, etc.<br/>
+                • Successfully secured multiple national software copyrights.<br/>
+                • Demonstrated expertise in software development and innovation by obtaining national recognition for the aforementioned projects.<br/>
+                • Proven track record of delivering cutting-edge solutions through the creation of innovative software products in the field of intelligent career planning and talent matching.</br>
+          </li>
+          <li>
+              <b>Nantong Himool Information Technology Co., Ltd.</b>
+              <br/><i>05/2023-07/2023</i>
+              <br/><i>Software Engineer</i>
+              <br/>
+                  • Managed secondary development of WMS and ERP systems, tailoring customization to meet specific requirements, enhancing system functionality and performance.<br/>
+                  • Drafted high-quality code and conducted thorough code reviews and optimizations to ensure project reliability and maintainability.<br/>
+                  • Produced instructional video courses, serving as an ERP expert to explain the intricacies of the ERP system, thereby contributing to the company’s training initiatives and open-source knowledge sharing. GitHub: <a href="https://github.com/Joe-2002/sweettalk-django4.2">https://github.com/Joe-2002/sweettalk-django4.2</a></br>
+          </li>
+          <li>
+              <b>Nantong Normal College.</b>
+              <br/><i>04/2023–06/2023</i>
+              <br/><i>Corporate External Instructor, School of Management</i>
+              <br/>
+                  • Designed and taught content for five distinct educational units, including two classes on Cross-border E-commerce and Data Analysis and Online Store Operation and Management.<br/>
+                  • Managed a workload of 12 weekly teaching hours, effectively delivering course material and engaging students in learning.<br/>
+                  • Demonstrated strong teaching skills and effectively communicated complex concepts, resulting in positive student feedback and academic success.<br/>
+          </li>
+          <li>
+              <b>Hai’an City Teacher Development Centre Affiliated Primary School.</b>
+              <br/><i>04/2022–05/2022</i>
+              <br/><i>Primary Teacher</i>
+              <br/>
+                  • Crafted and executed comprehensive software programming workshops for intermediate-level learners, immersing students in the intricacies of coding languages and fostering a deep understanding of algorithmic concepts.<br/>
+                  • Devised and facilitated interactive coding challenges and projects, cultivating a dynamic learning environment that honed students’ problem-solving skills and nurtured their creativity in software development.<br/>
+          </li>
+          <li>
+              <b>kdf.ai.</b>
+              <br/><i>07/2022–11/2022</i>
+              <br/><i>Software Engineer, Technical Department</i>
+              <br/>
+                  • Developed data annotation software with key features, including data set importing, displaying comprehensive data content, querying information, and modifying and deleting information.<br/>
+                  • Implemented user-specific text annotation capabilities, allowing users to annotate assigned texts for subsequent natural language processing tasks.<br/>
+                  • Developed a mobile data annotation tool built with a frontend-backend separation architecture using the Django and UniApp frameworks, provided an efficient solution for data processing in the enterprise’s NLP models.<br/>
+          </li>
+      </ul>
+      <h1>💻 Project Experience</h1>
+      <ul>
+          <li>
+              <b>Classification of Chinese Medicinal Materials based on Principal Component Analysis and K-Nearest Neighbour Algorithm</b>
+              <br/><i>Group Project Leader: Data Analysis and Model Building</i>
+              <br/>
+                  ● Overview: Based on the near-infrared and mid-infrared spectra of medicinal herbs, the project aims to identify the types, origins, and categories of medicinal herbs, as well as analyze their characteristics and differences.<br/>
+                  ● Responsibility: Led data preprocessing, feature selection, and feature dimensionality reduction. Established multiple classification models (K-means, KNN, SVM) and determined KNN as the classification model with an accuracy rate of over 90%.<br/>
+                  ● Achievement: Jiangsu Regional First Prize, 2021 National Undergraduate Mathematical Contest in Modelling<br/>
+          </li>
+          <li>
+              <b>Forward to the Profession—An Intelligent Career Planning System Based on Data Mining</b>
+              <br/><i>Group Project Leader: Product Architecture and Team Management. 2021 Jiangsu Provincial College Students’ Innovative Entrepreneurial Training Plan Programme (202114493020Y)</i>
+              <br/>
+                ● Overview: By leveraging data mining techniques, this project assesses users’ career planning abilities and provides scientifically sound career planning strategies and tools to help users develop their self-directed career planning skills.<br/>
+                ● Responsibility: Led product architecture and team management. Utilized data mining techniques for assessing users' career planning abilities, analyzed and extracted career interests, skills, and goals using feature engineering, and implemented a stacking model with GBDT and XGBoost algorithms for matching prediction. Iteratively optimized the intelligent career planning system.<br/>
+          </li>
+          <li>
+              <b>LinChance_GPT</b>
+              <br/><i>Group Project Leader</i>
+              <br/>
+                  ● Awards: First Prize, Datawhale “AI Summer Camp (Second Edition)”, Excellence Award & Best Innovation Award, Datawhale Open Source Learning<br/>
+                  ● Overview: The project aims to create an intelligent human-machine interaction product with a data-driven platform, leveraging advanced technologies such as LangChain, vector databases, large models, and NLP to enhance knowledge retrieval efficiency and expand into personal knowledge systems for enterprises and individuals.<br/>
+                  ● Responsibility: Conducted market research and competitor analysis, identified target users, implemented efficient storage, retrieval, and matching of knowledge base data using vector databases, leveraged GPT models for fast full-text search and precise result matching, developed secure backend with Django and visually appealing frontend with Vue.js, and integrated with LangChain's API and other technologies for enhanced data processing. Utilized LangChain and GPT models to improve user experience with intelligent replies. GitHub: <a href="https://github.com/Joe-2002/LinChance_GPT">https://github.com/Joe-2002/LinChance_GPT</a><br/>
+          </li>
+      </ul>
+      <h1>📜 Extracurricular Activity</h1>
+      <ul>
+          <li>
+              <b>Nantong Normal College</b>
+              <br/><i>President, Technology Innovation Society (01/2021–07/2023)</i>
+              <br/>
+                 ● Organized and managed the Society, overseeing discipline-oriented competitions.<br/>
+                 ● Taught and mentored participants, achieving outstanding results and a large audience.<br/>
+                 ● Recognized as a Five-Star Society and an active organization.<br/>
+          </li>
+          <li>
+              <b>Nantong Normal College</b>
+              <br/><i>Leader, Algorithm Training Team (12/2020–07/2023)</i>
+              <br/>
+                  ● Established and managed the first technology-based club.<br/>
+                  ● Achieved outstanding results and received accolades in discipline competitions.<br/>
+                  ● Mentored and guided 60+ team members, who won national and provincial awards.<br/>
+          </li>
+          <li>
+              <b>Nanjing University of Aeronautics and Astronautics</b>
+              <br/><i>Director of the Academic Department of the Association for Mathematical Modeling (10/2023–Present)</i>
+              <br/>
+                  ● Organized and conducted various lectures and courses to improve students' mathematical modeling skills and academic literacy.<br/>
+                  ● Participated in the organization of student competitions and successfully organized a series of high-quality lectures and competitions, resulting in the club being awarded Five-Star Club status.<br/>
+          </li>
+      </ul>
+      <h1>📝 Copyrights</h1>
+      <ul>
+          <li>
+              Recreational Vehicle Market Demand Marketing System (2023SR0217158) - 11/2022
+          </li>
+          <li>
+              Talent Matching System V1.0 based on Artificial Intelligence (2022SR1570163) - 08/2022
+          </li>
+          <li>
+              Intelligent Career Planning System 2.1 based on Data Mining and User Profiling (2022SR1346851) - 03/2022
+          </li>
+          <li>
+              Teaching Collaboration Platform V1.0 Based on Django and Vue Front-End Separation (2021SR1494741) - 08/2023
+          </li>
+          <li>
+              Digital Intelligent Enterprise Intelligent Assistant System Based on LLM (Large Language Model) and Vector Database (2023SR1583655) - 08/2023
+          </li>
+      </ul>
+      <ul>
+        <li>
+            <i>12/2023</i> - 2023 Baidu Search Innovation Competition Search Answer Organization Track Top 10
+        </li>
+        <li>
+            <i>12/2023</i> - 2023 Baidu Search Innovation Competition Design an AI native application track that solves the needs of search users Champion
+        </li>
+        <li>
+            <i>05/2023</i> - Merit Student of Nantong City
+        </li>
+        <li>
+            <i>04/2023</i> - National Excellent Award and Provincial First Prize, the 14th “Lanqiao Cup” C/C++ Programming Contest
+        </li>
+        <li>
+            <i>01/2023</i> - Top 50 in the 2022 China College Social Entrepreneurship Practice
+        </li>
+        <li>
+            <i>12/2022</i> - National Bronze, the “Mati Cup” National Vocational College Programming Contest
+        </li>
+        <li>
+            <i>11/2022</i> - Silver Award, the 12th “Challenge Cup” Jiangsu Province College Student Entrepreneurship Plan Competition
+        </li>
+        <li>
+            <i>08/2022</i> - National Third Prize and Provincial Second Prize, the 2022 RoboCom World Robot Developer Contest
+        </li> 
+        <li>
+          <i>07/2022</i> - Project “Forward to the Profession—An Intelligent Career Planning System Based on Data Mining” (Project ID: 202114493020Y), Jiangsu Province College Students' Innovation and Entrepreneurship Training Programme. 
+      </li> 
+      <li>
+        <i>06/2022</i> - 2022 Merit Student of Nantong City. 
+    </li> 
+    <li>
+      <i>05/2022</i> - National Excellent Award and Provincial First Prize, the 13th “Lanqiao Cup” C/C++ Programming Contest.
+    </li> 
+    <li>
+      <i>05/2022</i> - First Prize, Team Programming Ladder Competition “Challengers’ Arena” in Jiangsu Province at the China College Computer Competition.
+    </li> 
+    <li>
+      <i>12/2021</i> - Two Bronze Awards, the 17th “Challenge Cup” Jiangsu Province College Students’ Extracurricular Academic Science and Technology Works Competition.
+    </li> 
+    <li>
+      <i>07/2021</i> - Project “Career Circle” (Project ID: 202014493010Y), Jiangsu Province College Students' Innovation and Entrepreneurship Training Programme. 
+    </li>  
+    <li>
+      <i>06/2021</i> - National Excellent Award and Provincial First Prize, the 12th “Lanqiao Cup” C/C++ Programming Contest.
+    </li> 
+    <li>
+      <i>05/2021</i> - First Prize, Team Programming Ladder Competition “Challengers’ Arena” in Jiangsu Province at the China College Computer Competition. 
+    </li> 
+    <li>
+      <i>05/2021</i> - Third Class Scholarship, Nantong Normal College. 
+    </li>   
+    <li>
+      <i>05/2021</i> - Excellent Student Cadre, Nantong Normal College. 
+    </li> 
+    <li>
+      <i>12/2020</i> - Bronze Award, the 11th “Challenge Cup” Jiangsu Province College Student Entrepreneurship Plan Competition.         
+    </li> 
+    <li>
+      <i>11/2020</i> - National Third Prize and Provincial First Prize, the 11th “Lanqiao Cup” C/C++ Programming Contest.
+    </li>                     
+  </div>
+</body>
+</html>
+
+
+
+
+
+
